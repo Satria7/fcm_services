@@ -15,7 +15,7 @@ from google.oauth2 import service_account
 import requests
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, origins=["https://satria7.github.io"])
 
 PROJECT_ID = "klik-ngoerah"
 SERVICE_ACCOUNT_FILE = "serviceAccount.json"
